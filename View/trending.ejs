@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/trending.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="icon" type="image/png" href="./images/logo-white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Recommend-IT: trending</title>
+</head>
+
+<body>
+     <!--========== SCROLL TOP ==========-->
+     <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+
+    <!--========== HEADER ==========-->
+
+    <header class="" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Recommend-IT</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link ">Home</a></li>
+                    <li class="nav__item"><a href="#shop" class="nav__link ">Become a Seller</a></li>
+                    <li class="nav__item"><a href="#trending" class="nav__link active-link">Discover what's Trending</a></li>
+                    <li class="nav__item"><a href="#contact_us" class="nav__link">Email Us</a></li> 
+                    <li class="nav__item"><a href="/signIn" class="nav__link sign-in-out">$</a></li>    
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button nav__link"></i></li>
+                    <div class="cart nav__link ">
+                       <img src="./images/cart-dark.png" alt="" srcset="">
+                    </div>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="trending-head" >
+        <div>
+            Whats Trending <br> on a single <span class="click">click</span> <br>
+            <span class="head-text">Indulge in the ultimate comfort of your home as you explore our finest selection, <br>thoughtfully curated to match your preferences. Discover our top pick, specially <br> personalized to cater to your tastes, and relish the convenience of experiencing <br> it all without stepping a foot outside.</span>
+        </div>
+        <img src="./images/images/girl.png" alt="">
+    </div>
+        <div class="heading-trend">Trending Fashion</div>
+        <div class="latest_trend products">
+
+        </div>
+
+        <div class="heading-trend">Fashion</div>
+        <div class="partFashion" id="partFashion"></div>
+        <div class="heading-trend">Grocery</div>
+        <div class="part5" id="part5">
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascript/firebase.js"></script>
+    <script src="./javascript/data.js"></script>
+    <script src="./javascript/dataFashion.js"></script>
+    <script src="./javascript/trending.js" defer></script>
+    <script src="./javascript/navbar.js"></script>
+  
+</body>
+</html>

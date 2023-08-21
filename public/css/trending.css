@@ -1,0 +1,38 @@
+.trending-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: black;
+    padding-top: 5%;
+}
+.click{
+    cursor: pointer;
+}
+.head-text{
+    font-size: 0.4em;
+    font-weight: 100;
+    display: flex;
+
+}
+.trending-head img{
+    width: 50%;
+    border-radius: 30px;
+    /*border: black 2px solid; */
+    -webkit-box-shadow: -1px 13px 41px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: -1px 13px 41px -1px rgba(0,0,0,0.58);
+    box-shadow: -1px 13px 41px -1px rgba(0,0,0,0.58);
+}
+.heading-trend{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 4em;
+    text-align: center;
+    color: black;
+}
+.on-of{
+    display: none;
+}

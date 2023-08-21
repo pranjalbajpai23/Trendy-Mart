@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logo-white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/newCart.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <title>Recommend-IT: cart</title>
+</head>
+
+<body>
+     <!--========== SCROLL TOP ==========-->
+     <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Recommend-IT</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link shopMore">Shop more</li>
+                    <li class="nav__item-cart signOut"><a href="" class="nav__link">sign-out</a></li>
+                    <!-- <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li> -->
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    <div class="cart-heading">
+        Your Cart
+    </div>
+    <div class="content-cart">
+        <div class="displayCart">				
+        
+        </div>
+        <div class="total-payment">
+            <div class="total">
+                <div class="total-heading">Price Details:
+                    <br>
+                    <span style="font-weight: 200; font-size: 0.7em;">Total Items :</span>
+                    <span class="t-items"></span>
+                </div>
+                <div class="total-detail">
+                    <div>
+                        <span>Total MRP</span>
+                        <span class="t-price"></span>
+                    </div>
+                    <div>
+                        <span>Discount on MRP</span>
+                        <span class="discount-price">&#8377; 10%</span>
+                    </div>
+                    <div>
+                        <span>Shipping Charge</span>
+                        <span class="shiping"> &#8377;  50</span>
+                    </div>
+                    <div class="t-amt">
+                        
+                        <span><b>Total Amount</b></span>
+                        <span class="total-amt"></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ads">
+        <div class="ads-heading">You may also like: </div>
+        <div class="apiData"></div>
+    </div>
+    <section class="shop-services">
+		<div class="container-footer">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fas fa-rocket" style="color:#1c3446"></i>
+						
+						<h4>Free shipping</h4>
+						<p>Orders over Rs.1000</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fas fa-undo-alt" style="color:#1c3446"></i>
+						
+						<h4>Free Return</h4>
+						<p>Within 30 days returns</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fas fa-lock" style="color:#1c3446"></i>
+					
+						<h4>Secure Payment</h4>
+						<p>100% secure payment</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="fas fa-tags" style="color:#1c3446"></i>
+					
+						<h4>Best Price</h4>
+						<p>Guaranteed price</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./javascript/firebase.js"></script>
+    <script src="./javascript/data.js"></script>
+    <script src="./javascript/dataFashion.js"></script>
+    <script src="./javascript/newCart.js" defer></script>
+    <script src="./javascript/navbar.js"></script>
+  
+</body>
+</html>
