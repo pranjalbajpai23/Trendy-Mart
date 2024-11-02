@@ -1,5 +1,5 @@
 
-# Recommend-IT
+#Trendy-Mart
 ## Personalized Product Recommendations - E-commerce website
 The aim is to enhance user experience by implementing a personalized product ranking system. This Recommendation system takes user's
 preferences, past interactions, product popularity, and user similarity in account and helps user to buy products. 
